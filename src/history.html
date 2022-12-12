@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+	@@include('_head.htm',{
+	"title":"Customer"
+	})
+	<body>
+		<div class="wrapper">
+            @@include('_big-header.htm',{})
+            <section class="history">
+                <div class="history__container">
+                        <div class="history__product product" >
+                            <div class="product__title title">Название</div>
+                            <div class="product__date">Дата</div>
+                            <div class="product__sum">Сумма</div>
+                        </div>
+                        <div class="history__product product" >
+                            <div class="product__title title">Название</div>
+                            <div class="product__date">Дата</div>
+                            <div class="product__sum">Сумма</div>
+                        </div>
+                        <div class="history__product product" >
+                            <div class="product__title title">Название</div>
+                            <div class="product__date">Дата</div>
+                            <div class="product__sum">Сумма</div>
+                        </div>
+                </section>
+            </div>
+        @@include('_js.htm',{})
+	</body>
+</html>

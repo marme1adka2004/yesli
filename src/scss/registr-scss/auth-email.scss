@@ -1,0 +1,24 @@
+.email-sign {
+    position: relative;
+    &__decor{
+        position: absolute;
+        top: rem(-100);
+        right: 0;
+        z-index: -1;
+    }
+    &__auth {
+        margin-top: rem(70);
+    }
+
+    // .email-sign__form
+
+    &__form {
+        margin-bottom: rem(281);
+    }
+
+    // .email-sign__btn
+
+    &__btn {
+        padding: rem(20) rem(68);
+    }
+}

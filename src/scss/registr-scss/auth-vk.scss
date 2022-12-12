@@ -1,0 +1,32 @@
+.sign {
+    position: relative;
+    &__decor{
+        position: absolute;
+        top: rem(-100);
+        right: 0;
+        z-index: -1;
+        @media (max-width: em(662)){
+          display: none;
+        }
+    } 
+
+  
+    &__auth {
+        margin-top: rem(70);
+        margin-bottom: rem(281);
+        @media (max-width: em(473)){
+            text-align: center;
+          }
+    }
+
+		&__btn {
+       padding: rem(19) rem(101);
+       @media (max-width: em(473)){
+       display: flex;
+       justify-content: center;
+       align-items: center;
+  }
+		}
+
+
+}

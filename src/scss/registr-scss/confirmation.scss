@@ -1,0 +1,17 @@
+.confirmation {
+    position: relative;
+    &__decor{
+        position: absolute;
+        top: rem(-100);
+        right: 0;
+        z-index: -1;
+        @media (max-width: em(662)){
+            display: none;
+          }
+    }
+    // .confirmation__text
+
+    &__text {
+        margin-top: rem(70);
+    }
+}

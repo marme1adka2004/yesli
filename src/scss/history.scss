@@ -1,0 +1,41 @@
+.history {
+
+
+    // .history__product
+
+    &__product {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: rem(40);
+        width: rem(361);
+    }
+}
+.product {
+
+    // .product__title
+
+    &__title {
+        font-size: rem(16);
+        margin-right: rem(258);
+        margin-bottom: rem(34);
+    }
+
+    // .product__date
+
+    &__date {
+        font-weight: 300;
+        line-height: 105%;     
+        color: $someBlack;
+    }
+
+    // .product__sum
+
+    &__sum {
+        font-weight: 300;
+        line-height: 105%;
+        border-bottom: rem(1) solid $someBlack;
+        padding-bottom: rem(20);
+        color: $someBlack;
+        padding-right: rem(320);
+    }
+}

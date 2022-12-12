@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+	@@include('_head.htm',{
+	"title":"Customer"
+	})
+	<body>
+		<div class="wrapper">
+            @@include('_big-header.htm',{})
+            <section class="cabinet">
+                <div class="cabinet__container">
+                    <div class="cabinet__items items-cabinet">
+                        <div class="items-cabinet__person">
+                        <div class="items-cabinet__photo"></div>
+                        <div class="items-cabinet__reviews">Отзывы: 5</div>
+                        <a href="balance.html" class="items-cabinet__balance">Баланс: 0 ₽</a>
+                    </div>
+                    <div class="items-cabinet__about">
+                        <form action="" class="items-cabinet__form form-cabinet">
+                            <ul>
+                                <li>
+                                    <label for="text" class="items-cabinet__label label-cabinet"> Ваше имя </label>
+                                    <input type="text" class="items-cabinet__input input-cabinet" name="user" id="username" value="">
+                                </li>
+                                <li>
+                                    <label for="text" class="items-cabinet__label label-cabinet"> Ваша фамилия </label>
+                                    <input type="text" class="items-cabinet__input input-cabinet" name="user" id="username" value="">
+                                </li>
+                                <li>
+                                    <label for="text" class="items-cabinet__label label-cabinet"> Ваше отчество </label>
+                                    <input type="text" class="items-cabinet__input input-cabinet" name="user" id="username" value="">
+                                </li>
+                                <li>
+                                    <label for="text" class="items-cabinet__label label-cabinet"> Почта </label>
+                                    <input type="text" class="items-cabinet__input input-cabinet" name="user" id="username" value="">
+                                </li>
+                                <li>
+                                    <label for="text"  class="items-cabinet__label label-cabinet"> Телефон </label>
+                                    <input type="text" id="phone"  class="items-cabinet__input input-cabinet" name="user" id="username" value="">
+                                </li>
+                                <li>
+                                    <label for="text" class="items-cabinet__label label-cabinet">О себе </label>
+                                    <textarea class="items-cabinet__input big-input input-cabinet" id="" cols="70" rows="9"></textarea>
+                                </li>
+                                </ul>
+                           </form>
+                    </div>
+                    </div>
+                    <div class="cabinet__buttons">
+                        <a href="#data" class="cabinet__save btn-auth">Сохранить</a>
+                        <a href="customer.html" class="cabinet__back btn-registr">Выйти</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div id="data" class="popup">
+            <a href="#" class="popup__area"></a>
+            <div class="popup__body">
+                <div class="popup__content content-popup">
+                    <div class="popup__text text-popup">Поздравляем,
+                                    данные сохранены</div>
+                </div>
+            </div>
+        </div>
+        @@include('_js.htm',{})
+	</body>
+</html>

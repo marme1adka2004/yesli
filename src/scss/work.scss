@@ -1,0 +1,141 @@
+.work {
+
+    // .work__container
+
+    &__container {
+        display: flex;
+        gap: 80px;
+        @media (max-width: em(1047)){
+            gap: 20px; 
+        }
+        @media (max-width: em(991)){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    // .work__block
+
+    &__block {
+        flex: 0 1 50%;
+    }
+    &__chat {
+        flex: 0 1 50%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        @media (max-width: em(345)){
+          justify-content: center;
+          align-items: center;
+      }
+    }
+}
+.chat {
+    &__sms {
+        &_2 {
+            margin-left: 183px;
+            @media (max-width: em(515)){
+                
+                @media (max-width: em(585)){
+                    margin-left: 83px;
+                }
+                @media (max-width: em(449)){
+                    margin-left: 10px;   
+                }
+                @media (max-width: em(345)){
+                      svg {
+                        width: 290px;
+                      }
+                }
+            }
+        }
+        @media (max-width: em(345)){
+            svg {
+              width: 270px;
+            }
+      }
+    }
+
+    &__form {
+        position: relative;
+        width: 477px;
+        @media (max-width: em(515)){
+            width: 100%;
+        }
+    }
+    &__message { 
+        width: 477px;
+        height: 40px;
+        padding-left: 15px;
+        border: 1px solid #8C89AF;
+        border-radius: 10px;
+        outline: none;
+        @media (max-width: em(515)){
+            width: 100%;
+        }
+    }
+    &__arrow {
+        position: absolute;
+        top: 7px;
+        right: 0;
+       
+    }
+}
+.block {
+
+    // .block__body
+
+    &__body {
+        margin-top: 40px;
+    }
+
+    // .block__image
+
+    &__image {
+    }
+
+    // .block__info
+
+    &__info {
+    }
+
+    // .block__name
+
+    &__name {
+        display: flex;
+        gap: 175px;
+        @media (max-width: em(475)){
+              gap: 10px;
+        }
+    }
+
+    // .block__date
+
+    &__date {
+        @media (max-width: em(475)){
+            margin-left: auto;
+      }
+    }
+
+    // .block__text
+
+    &__text {
+    }
+
+    // .block__service
+
+    &__service {
+    }
+}
+.body-card {
+}
+.image-card {
+}
+.info-card {
+}
+.name-card {
+}
+.text-card {
+}

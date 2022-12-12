@@ -1,0 +1,72 @@
+.notifications {
+    position: relative;
+    &__decor{
+        position: absolute;
+        top: rem(-100);
+        right: 0;
+        z-index: -1;
+    }
+    // .notifications__container
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    // .notifications__body
+
+    &__body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: rem(50);
+        border: rem(4) solid $dataColor;
+        border-radius: rem(15);
+        margin-top: rem(197);
+        padding: rem(40) 0px rem(44) 0px;
+        &::before {
+            content: url(img/notifications/points1.svg);
+            position: absolute;
+            top: rem(-20);
+            right: rem(-30);
+        }
+        &::after {
+            content: url(img/notifications/points2.svg);
+            position: absolute;
+            bottom: rem(-20);
+            left: rem(-30);
+        }
+    }
+
+    // .notifications__title
+
+    &__title {
+        max-width: rem(394);
+        text-align: center;
+    }
+
+    // .notifications__buttons
+
+    &__buttons {
+        display: flex;
+        gap: rem(44);
+    }
+
+    // .notifications__btn
+
+    &__btn {
+       width: rem(70);
+        padding-top: rem(23);
+        text-align: center;
+        padding-bottom: rem(23);
+        border-radius: rem(10);
+        color: $white;
+        background: $blueColor;
+        &:hover {
+            background: $blueHover;
+        }
+    }
+}

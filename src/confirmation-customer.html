@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<link rel="stylesheet" href="style.css">
+    @@include('_head.htm',{
+        "title":"Customer"
+        })
+})
+    <body>
+        <div class="wrapper">
+            @@include('_small-header.htm',{
+                "title":"Вход"
+            })
+        <section class="confirmation">
+            <div class="confirmation__decor"><svg width="205" height="226" viewBox="0 0 205 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="41.54" y="189.075" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 41.54 189.075)" stroke="#8C89AF" stroke-width="3"/>
+                <rect x="86.9858" y="223.287" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 86.9858 223.287)" stroke="#8C89AF" stroke-width="3"/>
+                </svg>
+                </div>
+            <div class="confirmation__container">
+                <form action="password-customer.html">
+                <div class="confirmation__text text-sign">Введите код подтверждения</div>
+                <input  type="text" class="confirmation__form form-sign">
+            </form>
+            </div>
+        </section>
+    </div>
+        @@include('_js.htm',{})
+    </body>

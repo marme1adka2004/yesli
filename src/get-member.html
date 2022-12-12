@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+	@@include('_head.htm',{
+	"title":"Customer"
+	})
+	<body>
+		<div class="wrapper">
+		@@include('_big-header.htm',{})
+        <section class="get-member">
+            <div class="get-member__decor"><svg width="205" height="226" viewBox="0 0 205 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="41.54" y="189.075" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 41.54 189.075)" stroke="#8C89AF" stroke-width="3"/>
+                <rect x="86.9858" y="223.287" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 86.9858 223.287)" stroke="#8C89AF" stroke-width="3"/>
+                </svg>
+                </div>
+        <div class="get-member__container">
+            <form action="">
+                <div class="get-member__body">
+                    <div class="get-member__content">
+                    <div class="get-member__title title">Добавить участника</div>
+                    <ul>
+                        <li>
+                            <label for="text" class="get-member__label"> Номер телефона участника</label>
+                            <input type="text" class="get-member__input"  id="phone" value="">
+                        </li>
+                        <li>
+                            <label for="text" class="get-member__label"> Почта участника</label>
+                            <input type="text" class="get-member__input" value="">
+                        </li>                      
+                        </ul>
+                        <div class="get-member__notification">Отправим ему уведомление</div>
+                    </div>
+                </div>
+                <a href="member.html" class="get-member__btn btn-registr">Отправить</a>
+            </form>
+        </div>
+        <div class="get-member__decor_2"><svg width="198" height="180" viewBox="0 0 198 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="155.898" y="35.9991" width="185.404" height="192.133" rx="28.5" transform="rotate(77.6189 155.898 35.9991)" stroke="#8C89AF" stroke-width="3"/>
+            <rect x="110.452" y="1.78673" width="185.404" height="192.133" rx="28.5" transform="rotate(77.6189 110.452 1.78673)" stroke="#8C89AF" stroke-width="3"/>
+            </svg>
+            </div>
+        </section>
+			</div>
+		@@include('_js.htm',{})
+	</body>
+</html>

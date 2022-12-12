@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<link rel="stylesheet" href="style.css">
+    @@include('_head.htm',{
+        "title":"Executor"
+        })
+    <body>
+        <div class="wrapper">
+            @@include('_small-header.htm',{
+                "title":"Вход"
+            })
+        
+        <section class="authorization">
+            <div class="authorization__decor"><svg width="205" height="226" viewBox="0 0 205 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="41.54" y="189.075" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 41.54 189.075)" stroke="#8C89AF" stroke-width="3"/>
+                <rect x="86.9858" y="223.287" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 86.9858 223.287)" stroke="#8C89AF" stroke-width="3"/>
+                </svg>
+                </div>
+            <div class="authorization__container">
+                <div class="authorization__body">
+                    <div class="authorization__title title-auth">Авторизация</div>
+                    <div class="authorization__buttons buttons-auth">
+                        <a href="auth-vk-executor.html" class="authorization__btn btn-auth">Авторизация через Вконтакте</a>
+                        <a href="auth-number-executor.html" class="authorization__btn btn-auth">Авторизация по номеру телефона</a>
+                        <a href="auth-email-executor.html" class="authorization__btn btn-auth">Авторизация через e-mail</a>
+                    </div>
+                </div>
+            </div>
+            <div class="authorization__decor_2"><svg width="198" height="180" viewBox="0 0 198 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="155.898" y="35.9991" width="185.404" height="192.133" rx="28.5" transform="rotate(77.6189 155.898 35.9991)" stroke="#8C89AF" stroke-width="3"/>
+                <rect x="110.452" y="1.78673" width="185.404" height="192.133" rx="28.5" transform="rotate(77.6189 110.452 1.78673)" stroke="#8C89AF" stroke-width="3"/>
+                </svg>
+                </div>
+        </section>
+
+    </div>
+
+
+
+        @@include('_js.htm',{})
+    </body>

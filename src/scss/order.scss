@@ -1,0 +1,139 @@
+.order {
+
+    &__content {
+        display: flex;
+        @media (max-width: em(557)){
+              flex-direction: column;
+        }
+    }
+    // .order__body
+
+    &__body {
+        margin-top: rem(40);
+    }
+
+    &__title {
+        margin-bottom: rem(20);
+    }
+    // .order__form
+
+    &__form {
+        margin-bottom: rem(40);
+    }
+
+    // .order__input
+
+    &__input {
+        width: rem(243);
+        height: rem(40);
+        border: rem(1) solid $darkCard;
+        border-radius: rem(10);
+        padding-left: rem(15);
+        font-weight: 300;
+        font-size: rem(16);
+        line-height: 105%;
+        color: $darkCard;
+        outline: none;
+    }
+
+    // .order__text
+
+    &__text {
+        font-size: rem(30);
+        margin-bottom: rem(40);
+       @media (max-width: em(440)){
+        margin-bottom: rem(20);
+       }
+    }
+
+    // .order__btn
+    &__btn {
+        display: flex;
+        width: rem(260);
+        padding: rem(20) rem(60) rem(19) rem(61);
+        margin-top: rem(51);
+        @media (max-width: em(557)){
+              width: 100%;
+              justify-content: center;
+              margin-top: rem(200);
+
+        }
+    }
+
+    // .order__menu
+
+    &__menu {
+        margin-top: rem(90);
+        margin-left: rem(98);
+        font-weight: 400;
+        position: relative;
+        @media (max-width: em(557)){
+            margin-left: rem(8);  
+            margin-top: 0;
+        }
+
+    }
+  
+}
+
+
+.menu-order {
+
+    &__title {
+        position: absolute;
+        z-index: 2;
+        font-size: rem(16);
+        line-height: 105%;
+        color: $someBlack;
+        background: $whiteColor;
+        border-radius: rem(10);
+        width: rem(156);
+        text-align: center;
+        padding-bottom: rem(12);
+        padding-top: rem(12);
+        height: 40px;
+        svg {
+            margin-left: rem(41);
+        }
+        
+    }
+    // .menu-order__items
+
+    &__items {
+        width: rem(156);
+        position: absolute;
+        top: rem(30);
+        text-align: start;
+        left: 0;
+        background: $cardColor;
+        border-radius: 0px 0px rem(10) rem(10);
+        padding-top: rem(20);
+        padding: rem(14);
+        a { 
+            z-index: 2;
+        }
+        li {
+        &:first-child {
+            margin-top: rem(15);
+        }
+        &:not(:last-child) {
+            margin-bottom: rem(15);
+            border-bottom: rem(1) solid $someBlack;
+            padding-bottom: rem(15);
+        }
+    }
+    }
+    // .menu-order__link
+
+    &__link {
+        font-weight: 300;
+        font-size: rem(16);
+        line-height: 105%;
+         color: $someBlack;
+
+    }
+}
+.btn-customer {
+    padding-left: rem(34);
+    padding-right: rem(35);
+}

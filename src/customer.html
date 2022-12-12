@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+	@@include('_head.htm',{
+	"title":"General"
+	})
+	<body>
+		<div class="wrapper">
+		@@include('_big-header.htm',{})
+			<section class="general">
+				<div class="general__container">
+
+					<form>
+						<div class="general__search ">
+						<input type="text" class="general__input" placeholder="Название заказа">
+						<a href="get-member.html" class="general__btn btn-member">Добавить организацию</a>
+					</div>
+					</form>
+					<div class="general__items items-general">
+						<div class="items-general__item_1">
+						<div class="items-general__block">
+							<div class="items-general__img"></div>
+							<div class="items-general__body">
+								<div class="items-general__text">Название</div>
+								<div class="items-general__text">Стоимость</div>
+								<div class="items-general__text">Рубрика</div>
+								<div class="items-general__text">Описание</div>
+							</div>
+						</div>
+						<div class="items-general__button">
+							<a href="order.html" class="items-general__btn">Подробнее</a>
+						</div>
+					</div>
+					<div class="items-general__item_2">
+							<div class="items-general__block">
+							<div class="items-general__img"></div>
+							<div class="items-general__body">
+								<div class="items-general__text">Название</div>
+								<div class="items-general__text">Стоимость</div>
+								<div class="items-general__text">Рубрика</div>
+								<div class="items-general__text">Описание</div>
+							</div>
+						</div>
+						<div class="items-general__button">
+							<a href="order.html" class="items-general__btn">Подробнее</a>
+						</div>
+						</div>
+				</div>
+					<a href="#popup" class="general__popup">Попап №1</a>
+					<a href="#popup2" class="general__popup">Попап №2</a>
+				</div>
+			</section>
+			</div>
+
+
+
+			
+			<div id="popup" class="popup">
+				<a href="balance.html" class="popup__area"></a>
+				<div class="popup__body">
+					<div class="popup__content">
+						<div class="popup__text">Пробный период окончен, но Вы можете продолжить пользование сервисом после оплаты</div>
+						<div class="popup__button">
+						<a href="balance.html" class="popup__btn btn-registr">Оплатить подписку</a>
+					</div>
+					</div>
+				</div>
+			</div>
+			<div id="popup2" class="popup">
+				<a href="#" class="popup__area"></a>
+				<div class="popup__body">
+					<div class="popup__content">
+						<div class="popup__text">Добро пожаловать, Вам доступен бесплатный период на 14 дней</div>
+						<div class="popup__subtitle">По истечению 14 дней вы сможете пользоваться сервисом после оплаты</div>
+					</div>
+				</div>
+			</div>
+		@@include('_js.htm',{})
+	</body>
+</html>

@@ -1,0 +1,85 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//Burger
+/*
+
+*/
+.header {
+	background-color: $bodyColor;
+	// .header__container
+
+	&__container {
+		padding-top: rem(24);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	// .header__logo
+
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
+	// .header__icon
+	&__icon {
+		margin-right: rem(28);
+		@media (max-width:em(425)){
+			margin: 0;  
+		}
+	}
+
+	// .header__city
+
+	&__city {
+		color: $white;
+		font-weight: 400;
+		font-size: rem(20);
+		display: flex;
+		gap: rem(5);
+	}
+
+	// .header__buttons
+
+	&__buttons {
+		display: flex;
+		gap: rem(20);
+		@media (max-width:em(585)){
+		  flex-direction: column;	
+	}
+	}
+
+	// .header__executor
+
+	&__executor {
+		background-color: $yellowBtn;
+		color: $black;		
+		position: relative;
+		&:hover {
+			background-color: $yellowHover;
+			transition: 0.3s;
+		}
+
+	}
+
+	&__decor {
+		position: absolute;
+		top: 0;
+		@media (max-width:em(585)){
+			display: none;
+		}
+	}
+	// .header__customer
+
+	&__customer {
+		position: relative;
+		background-color: $blueColor;
+		color: $white;
+		&:hover {
+			background-color: $blueHover;
+			transition: 0.3s;
+		}
+	}
+}

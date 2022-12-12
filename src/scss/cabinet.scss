@@ -1,0 +1,132 @@
+.cabinet {
+
+    // .cabinet__container
+    // .cabinet__items
+
+    &__items {
+        display: flex;
+        gap: rem(51);
+        margin-top: rem(43);
+        @media (max-width: em(955)){
+              flex-direction: column;
+        }
+    }
+
+    // .cabinet__buttons
+
+    &__buttons {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: 105%;
+        @media (max-width: em(425)){
+              display: flex;
+              flex-direction: column;
+              text-align: center;
+              align-items: center;
+              justify-content: center;
+              gap: rem(20);
+        }
+        
+    }
+
+    // .cabinet__save
+
+    &__save {
+        padding-left: rem(21);
+        padding-right: rem(20);
+        color: $white;
+        margin-right: rem(39);
+        @media (max-width: em(425)){
+            width: 100%;
+            margin: 0;
+      }
+    }
+
+    // .cabinet__back
+
+    &__back {
+        color: $someBlack;
+        padding: rem(18) rem(39) rem(19) rem(40);
+        @media (max-width: em(425)){
+            width: 100%;
+      }
+    }
+}
+.items-cabinet {
+
+    // .items-cabinet__person
+
+    &__person {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: rem(10);
+    }
+
+    // .items-cabinet__photo
+
+    &__photo {
+        width: rem(176);
+        height: rem(176);
+        background: $cardColor;
+        border-radius: rem(5);
+    }
+
+    // .items-cabinet__reviews
+
+    &__reviews {
+        font-weight: 400;
+        font-size: rem(30);
+        line-height: rem(45);
+        color: $someBlack;
+
+    }
+
+    // .items-cabinet__balance
+
+    &__balance {
+        margin-bottom: rem(289);
+        font-weight: 400;
+        font-size: rem(30);
+        line-height: rem(45);
+        color: $blueColor;
+        @media (max-width: em(955)){
+            margin-bottom: rem(20);
+      }
+    }
+
+    // .items-cabinet__form
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // .items-cabinet__text
+
+    &__text {
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: rem(45);
+        color: $someBlack;
+        @media (max-width: em(416)){
+            font-size: rem(15);      
+        }
+    }
+
+}
+
+
+.big-input {
+   height: rem(140);
+    padding-top: rem(10);
+}
+
+
+.content-popup {
+    display: flex;
+    align-items: center;
+}
+.text-popup {
+    font-size: 30px;
+}

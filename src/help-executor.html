@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+    @@include('_head.htm',{
+        "title":"Executor"
+        })
+	<body>
+		<div class="wrapper">
+			@@include('_big-header-executor.htm',{})
+            <section class="help">
+                <div class="help__container">
+                    <div class="help__messages">
+                    <div class="help__item item-help help-block">
+                        <div class="item-help__title title">Название
+                            <div class="item-help__date">Дата</div>
+                        </div>
+                        <div class="item-help__text">Текст соообщения</div>
+                    </div>
+                    </div>
+                    <div class="help__button">
+                    <a href="help-chat-executor.html" class="help__btn btn-registr">Задать новый вопрос</a>
+                </div>
+                </div>
+            </section>
+            </div>
+		@@include('_js.htm',{})
+	</body>
+</html>

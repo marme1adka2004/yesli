@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+	
+	<link rel="stylesheet" href="style.css">
+	@@include('_head.htm',{
+        "title":"Executor"
+        })
+	<body>
+		<div class="wrapper">
+			@@include('_big-header-executor.htm',{})
+            <section class="member-info">
+                <div class="member-info__container">
+                    <form action="" class="member-info__form form-cabinet">
+                        <ul>
+                            <li>
+                                <label for="text" class="member-info__label label-cabinet"> Название организации</label>
+                                <input type="text" class="member-info__input input-cabinet" name="user" id="username" value="">
+                            </li>
+                            <li>
+                                <label for="text" class="member-info__label label-cabinet"> ИНН</label>
+                                <input type="text" class="member-info__input input-cabinet" name="user" id="username" value="">
+                            </li>
+                            <li>
+                                <label for="text" class="member-info__label label-cabinet"> ОРГН </label>
+                                <input type="text" class="member-info__input input-cabinet" name="user" id="username" value="">
+                            </li>
+                            <li>
+                                <label for="text" class="member-info__label label-cabinet"> ФИО директора </label>
+                                <input type="text" class="member-info__input input-cabinet" name="user" id="username" value="">
+                            </li>
+                            <li>
+                                <label for="text"  class="member-info__label label-cabinet"> Телефон директора </label>
+                                <input type="text" id="phone"  class="member-info__input input-cabinet" name="user" id="username" value="">
+                            </li>
+                            <li>
+                                <label for="text" class="member-info__label label-cabinet">Об организации </label>
+                                <textarea class="member-info__input big input-cabinet" id="" cols="70" rows="9"></textarea>
+                            </li>
+                            </ul>
+                       </form>
+                       <div class="member-info__buttons">
+                        <a href="" class="member-info__save btn-auth">Сохранить</a>
+                        <a href="member-executor.html" class="member-info__back btn-registr">Выйти</a>
+                       </div>
+                </section>
+            </div>
+		@@include('_js.htm',{})
+	</body>
+</html>

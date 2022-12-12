@@ -1,0 +1,22 @@
+.sign {
+
+    // .sign__sms
+
+    &__sms {
+        margin-bottom: rem(361);
+        font-weight: 400;
+        font-size: rem(20);
+        line-height: 105%;
+        color: $someBlack;
+        @media (max-width: em(425)){
+            margin-bottom: rem(61);
+        }
+        
+}
+
+    // .sign__btn
+
+    &__btn {
+        text-align: center;
+    }
+}

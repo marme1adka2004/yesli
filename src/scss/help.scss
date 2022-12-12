@@ -1,0 +1,117 @@
+.help {
+    &__messages {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__button {
+        margin-top: rem(60);
+    }
+    // .help__btn
+
+    &__btn {
+        padding: rem(19) rem(29);
+        @media (max-width: em(425)){
+            display: block;
+            text-align: center;
+      }
+    }
+}
+.item-help {
+
+    // .item-help__title
+
+    &__title {
+        display: flex;
+       border-bottom: rem(1) solid $someBlack;
+       padding-bottom: rem(10);
+       font-size: rem(16);
+    }
+
+    // .item-help__date
+
+    &__date {
+        font-weight: 300;
+        line-height: 105%;
+        margin-left: auto;
+        color: $someBlack;
+        font-size: rem(14);
+    }
+
+    // .item-help__text
+
+    &__text {
+        font-weight: 300;
+        line-height: 105%;
+        color: $someBlack;
+
+    }
+}
+.help-block {
+    display: flex;
+    margin-top: rem(40);
+    flex-direction: column;
+    gap: rem(20);
+    margin-bottom: rem(20);
+    background: $whiteColor;
+    border-radius: rem(10);
+    width: rem(455);
+    padding: rem(30) rem(20);
+    @media (max-width: em(469)){
+          width: 100%;
+    }
+
+}
+.item-help {
+
+    // .item-help__button
+
+    &__button {
+        margin-top: rem(60);
+       
+    }
+
+    // .item-help__btn
+
+    &__btn {
+        padding: rem(19) rem(29);
+        @media (max-width: em(425)){
+            display: block;
+            text-align: center;
+      }
+    }
+}
+.dark-purple {
+    background: $cardColor
+}
+
+.chat-help {
+    &__container {
+        display: flex;
+        gap: rem(80);
+        @media (max-width: em(1047)){
+            gap: rem(20); 
+        }
+        @media (max-width: em(991)){
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+
+    &__content {
+        flex: 0 1 50%;
+        margin-top: rem(40);
+        display: flex;
+        flex-direction: column;
+        gap: rem(30);
+        @media (max-width: em(345)){
+          justify-content: center;
+          align-items: center;
+      }
+    }
+}

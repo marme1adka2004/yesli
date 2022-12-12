@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<link rel="stylesheet" href="style.css">
+    @@include('_head.htm',{
+        "title":"Customer"
+        })
+
+
+    <body>
+        <div class="wrapper">
+            @@include('_small-header.htm',{
+                "title":"Вход"
+            })
+
+        <section class="sign">
+            <div class="sign__decor"><svg width="205" height="226" viewBox="0 0 205 226" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="41.54" y="189.075" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 41.54 189.075)" stroke="#8C89AF" stroke-width="3"/>
+                <rect x="86.9858" y="223.287" width="185.404" height="192.133" rx="28.5" transform="rotate(-102.381 86.9858 223.287)" stroke="#8C89AF" stroke-width="3"/>
+                </svg>
+                </div>
+            <div class="sign__container">
+                <div class="sign__auth">
+                <div class="sign__text text-sign">Ваш  e-mail</div>
+                <input type="text" class="sign__form form-sign">
+                <div class="sign__text text-sign">Пароль</div>
+                <input type="password" class="sign__form form-sign">
+            </div>
+                <a href="auth-email-sms-customer.html" class="sign__btn btn-registr">Авторизация</a>          
+            </div>
+       
+        </section>
+    </div>
+        @@include('_js.htm',{})
+    </body>

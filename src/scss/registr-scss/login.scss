@@ -1,0 +1,50 @@
+.login {
+    position: relative;
+    &__decor{
+        position: absolute;
+        top: rem(-100);
+        right: 0;
+        z-index: -1;
+    } 
+    // .login__container
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: rem(104);
+    }
+
+    // .login__body
+
+    &__body {
+        @media (max-width: em(433)){
+            width: 100%;
+
+      }
+
+    }
+
+
+    // .login__buttons
+
+    &__buttons {
+        gap: rem(20);
+        margin-bottom: rem(52);
+
+    }
+
+    // .login__btn
+
+    &__btn {
+        padding-top: rem(22);
+        padding-bottom: rem(21);
+    }
+
+    // .login__registr
+
+    &__registr {
+        padding: rem(20) rem(70);
+}
+}

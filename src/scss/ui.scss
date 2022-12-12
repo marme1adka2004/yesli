@@ -1,0 +1,155 @@
+
+//</ГОТОВЫЕ КЛАССЫ>====================================================================================================
+
+.title {
+	font-weight: 400;
+	font-size: rem(30);
+	line-height: 105%;
+	color: $someBlack;
+}
+.text {
+	font-weight: 400;
+	font-size: rem(18);
+	line-height: 105%;
+	color: $someBlack;
+}
+.subtitle {
+	font-weight: 400;
+	font-size: rem(20);
+	line-height: 105%;
+	color: $someBlack;
+}
+.title-auth {
+	text-align: center;
+	font-weight: 400;
+	font-size: rem(30);
+	line-height: 105%;
+	color: $someBlack;
+	padding: rem(30) rem(178);
+	max-width: 100%;
+	background: $whiteColor;
+	border-radius: 15px 15px 0px 0px;
+	@media (max-width: em(433)){
+		padding: rem(30) rem(100);
+	}
+}
+.buttons-auth {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	border-radius: 0px 0px rem(15) rem(15);
+	padding-top: rem(40);
+	padding-bottom: rem(40);
+	background: $dataColor;
+}
+.btn-auth {
+	color: $white;
+	border-radius: rem(10);
+	background: $blueColor;
+	width: rem(350);
+	padding-top: rem(19);
+	padding-bottom: rem(18);
+	&:hover {
+		background: $blueHover;
+		transition: 0.3s;
+	}
+	@media (max-width: em(425)){
+			width: 100%;
+	  
+	}
+}
+.btn-registr {
+	color: $someBlack;
+	background: $yellowBtn;
+	font-size: rem(20);
+	font-weight: 400;
+	line-height: 105%;
+	border-radius: rem(10);
+	&:hover {
+		background: $yellowHover;
+		transition: 0.3s;
+	}
+	@media (max-width: em(433)){
+		width: 100%;
+		text-align: center;
+  }
+}
+.text-sign {
+	margin-bottom: rem(50);
+	font-weight: 400;
+	font-size: rem(30);
+	line-height: 105%;
+	color: $someBlack;
+}
+.form-sign {
+	border-bottom: solid 1px $someBlack;
+	width: rem(457);
+	outline: none;
+	font-size: rem(30);
+	&:not(:last-child){
+	margin-bottom: rem(50);
+}
+@media (max-width: em(473)){
+	  max-width: 100%;
+}
+}
+
+.btn-member {
+	padding: rem(13) rem(9) rem(10) rem(42);
+	background: $yellowBtn;
+	border-radius: rem(10);
+	font-weight: 400;
+	font-size: rem(16);
+	line-height: 105%;
+	text-align: center;
+	color: $someBlack;
+	position: relative;
+	&::before{
+		content: url(img/plus.svg);
+		position: absolute;
+		z-index: 2;
+		top: rem(11);
+		left: rem(15);
+	}
+	&:hover {
+		background: $yellowHover;
+		transition: 0.3s;
+	}
+}
+
+.label-cabinet {
+	font-weight: 400;
+	font-size: rem(20);
+	line-height: rem(45);
+	color: $someBlack;
+}
+.input-cabinet {
+	border: 1px solid #8C89AF;
+	border-radius: rem(10);
+	width: rem(515);
+	height: rem(40);
+	outline: $darkCard;
+	padding-left: rem(30);
+	margin-bottom: rem(20);
+	@media (max-width: em(768)){
+		  width: 60%;
+	}
+	@media (max-width: em(413)){
+		width: 50%;
+	}
+}
+.form-cabinet {
+	li {
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40);
+        @media (max-width: em(768)){
+            gap: rem(10);
+      }
+      @media (max-width: em(413)){
+        gap: rem(2);
+    }
+       }
+}
